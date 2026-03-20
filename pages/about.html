@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="IMPERIA Events is a luxury event planning and styling studio offering couture-level experiences."
+    />
+    <title>IMPERIA Events | Luxury Event Planning & Styling Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/darkmode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="IMPERIA Events home">
+          <span class="brand-icon"><i class="fa-solid fa-gem"></i></span>
+          <span class="brand-text">IMPERIA Events</span>
+        </a>
+
+        <nav class="nav" id="primaryNav" aria-label="Primary">
+          <ul class="nav-list">
+            <li class="nav-item has-dropdown">
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Home
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="dropdown" role="menu">
+                <a class="dropdown-link" href="index.html">Home page-1</a>
+                <a class="dropdown-link" href="homepage2.html">Home page-2</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item has-dropdown">
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dashboards
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="dropdown" role="menu">
+                <a class="dropdown-link" href="userdashboard.html"
+                  >Client Dashboard</a
+                >
+                <a class="dropdown-link" href="admindashboard.html"
+                  >Admin Dashboard</a
+                >
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="icon-btn"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+            aria-pressed="false"
+          >
+            <i class="fa-regular fa-moon"></i>
+          </button>
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            aria-label="Toggle RTL"
+            aria-pressed="false"
+          >
+            <i class="fa-solid fa-align-right"></i>
+          </button>
+          <a class="btn btn-outline" href="login.html">Login</a>
+          <a class="btn btn-primary" href="contact.html">Book Now</a>
+          <button
+            class="hamburger"
+            id="navToggle"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="primaryNav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ================= ABOUT HERO ================= -->
+      <section class="about-hero" id="about-hero">
+        <div class="about-hero-bg"></div>
+        <div class="about-hero-overlay"></div>
+
+        <div class="container about-hero-content" data-reveal>
+          <h1>Crafting Experiences That Define Moments</h1>
+          <p>
+            A luxury event studio blending creativity, precision, and technology
+          </p>
+        </div>
+      </section>
+      <!-- ================= BRAND STORY ================= -->
+      <section
+        class="brand-story"
+        id="brand-story"
+        data-reveal
+        style="--delay: 0.12s"
+      >
+        <div class="container story-grid">
+          <!-- TEXT -->
+          <div class="story-content" data-reveal style="--delay: 0.18s">
+            <p class="section-eyebrow">IMPERIA Events</p>
+            <h2>Our Story</h2>
+
+            <p class="story-text">
+              IMPERIA was born from a vision to redefine luxury event
+              experiences through a seamless blend of creativity and technology.
+              What began as a boutique styling studio has evolved into a
+              sophisticated platform where every detail is curated with
+              intention. We believe that true luxury lies not only in
+              aesthetics, but in precision, flow, and the emotions an experience
+              creates. From intimate celebrations to grand productions, our
+              approach transforms ideas into immersive moments that feel
+              effortless yet unforgettable.
+            </p>
+
+            <p class="story-signature">
+              Signature philosophy: refined design, seamless execution, and
+              timeless experiences.
+            </p>
+          </div>
+
+          <!-- IMAGE -->
+          <div class="story-media" data-reveal style="--delay: 0.24s">
+            <div class="story-image"></div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= TEAM / FOUNDER ================= -->
+      <section class="team" id="team" data-reveal style="--delay: 0.12s">
+        <div class="container">
+          <div class="section-head" data-reveal style="--delay: 0.16s">
+            <p class="section-eyebrow">Our Team</p>
+            <h2>Meet the Vision Behind IMPERIA</h2>
+            <p>
+              Creative minds dedicated to crafting refined, seamless, and
+              unforgettable event experiences.
+            </p>
+          </div>
+
+          <div class="team-grid">
+            <!-- MEMBER -->
+            <div class="team-card" data-reveal style="--delay: 0.2s">
+              <div class="team-media">
+                <img
+                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+                  alt="Founder"
+                />
+                <div class="team-overlay">
+                  <div class="team-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-behance"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-content">
+                <h3>Isabella Laurent</h3>
+                <span>Founder & Creative Director</span>
+                <p>
+                  Leading IMPERIA with a vision for luxury storytelling and
+                  refined event design.
+                </p>
+              </div>
+            </div>
+
+            <!-- MEMBER -->
+            <div class="team-card" data-reveal style="--delay: 0.26s">
+              <div class="team-media">
+                <img
+                  src="https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?auto=format&fit=crop&w=800&q=80"
+                  alt="Team Member"
+                />
+                <div class="team-overlay">
+                  <div class="team-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-behance"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-content">
+                <h3>Noah Reed</h3>
+                <span>Operations Director</span>
+                <p>
+                  Ensuring seamless execution and precision in every detail of
+                  our events.
+                </p>
+              </div>
+            </div>
+
+            <!-- MEMBER -->
+            <div class="team-card" data-reveal style="--delay: 0.32s">
+              <div class="team-media">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80"
+                  alt="Team Member"
+                />
+                <div class="team-overlay">
+                  <div class="team-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-behance"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-content">
+                <h3>Elliot Hayes</h3>
+                <span>Design Lead</span>
+                <p>
+                  Crafting immersive visual concepts and elevated styling
+                  experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= VALUES / PHILOSOPHY ================= -->
+      <section class="values" id="values" data-reveal style="--delay: 0.12s">
+        <div class="container">
+          <div class="section-head" data-reveal style="--delay: 0.16s">
+            <p class="section-eyebrow">Our Philosophy</p>
+            <h2>Principles That Define IMPERIA</h2>
+            <p>
+              Guided by creativity, precision, and excellence, we craft
+              experiences that feel seamless and timeless.
+            </p>
+          </div>
+
+          <div class="values-grid">
+            <div class="value-card" data-reveal style="--delay: 0.2s">
+              <div class="value-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <h3>Creativity</h3>
+              <p>
+                We transform ideas into refined visual stories with distinctive
+                design and artistry.
+              </p>
+            </div>
+
+            <div class="value-card" data-reveal style="--delay: 0.26s">
+              <div class="value-icon"><i class="fa-solid fa-compass"></i></div>
+              <h3>Precision</h3>
+              <p>
+                Every detail is executed with accuracy, ensuring a seamless and
+                flawless experience.
+              </p>
+            </div>
+
+            <div class="value-card" data-reveal style="--delay: 0.32s">
+              <div class="value-icon">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+              <h3>Collaboration</h3>
+              <p>
+                We work closely with clients to bring visions to life through
+                meaningful partnerships.
+              </p>
+            </div>
+
+            <div class="value-card" data-reveal style="--delay: 0.38s">
+              <div class="value-icon"><i class="fa-solid fa-star"></i></div>
+              <h3>Excellence</h3>
+              <p>
+                We deliver elevated experiences that exceed expectations and
+                leave lasting impressions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= OUR JOURNEY ================= -->
+      <section class="journey" id="journey" data-reveal style="--delay: 0.12s">
+        <div class="container">
+          <div class="section-head" data-reveal style="--delay: 0.16s">
+            <p class="section-eyebrow">Our Journey</p>
+            <h2>From Vision to Iconic Experiences</h2>
+            <p>
+              A timeline of growth, creativity, and excellence that defines
+              IMPERIA.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <!-- ITEM -->
+            <div class="timeline-item" data-reveal style="--delay: 0.2s">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2018</span>
+                <h3>Founded IMPERIA</h3>
+                <p>
+                  Started as a boutique event studio focused on luxury styling
+                  and curated experiences.
+                </p>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="timeline-item" data-reveal style="--delay: 0.28s">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2020</span>
+                <h3>Expanded Services</h3>
+                <p>
+                  Introduced full-service planning and collaborated with elite
+                  vendors globally.
+                </p>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="timeline-item" data-reveal style="--delay: 0.36s">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2022</span>
+                <h3>Digital Transformation</h3>
+                <p>
+                  Launched a platform enabling real-time collaboration and
+                  client dashboards.
+                </p>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="timeline-item" data-reveal style="--delay: 0.44s">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2025</span>
+                <h3>Global Recognition</h3>
+                <p>
+                  Recognized as a premium event studio delivering world-class
+                  experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= STATS ================= -->
+      <section class="stats" id="stats" data-reveal style="--delay: 0.12s">
+        <div class="container">
+          <div class="section-head" data-reveal style="--delay: 0.16s">
+            <p class="section-eyebrow">Our Impact</p>
+            <h2>Numbers That Define Excellence</h2>
+            <p>
+              Delivering exceptional experiences backed by measurable success.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card" data-reveal style="--delay: 0.2s">
+              <h3 class="counter" data-target="250">0</h3>
+              <p>Events Completed</p>
+            </div>
+
+            <div class="stat-card" data-reveal style="--delay: 0.26s">
+              <h3 class="counter" data-target="180">0</h3>
+              <p>Happy Clients</p>
+            </div>
+
+            <div class="stat-card" data-reveal style="--delay: 0.32s">
+              <h3 class="counter" data-target="7">0</h3>
+              <p>Years Experience</p>
+            </div>
+
+            <div class="stat-card" data-reveal style="--delay: 0.38s">
+              <h3 class="counter" data-target="15">0</h3>
+              <p>Awards</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= LUXURY CTA ================= -->
+      <section
+        class="cta-luxury"
+        id="cta-luxury"
+        data-reveal
+        style="--delay: 0.12s"
+      >
+        <div class="cta-bg"></div>
+        <div class="cta-overlay"></div>
+
+        <div
+          class="container cta-luxury-content"
+          data-reveal
+          style="--delay: 0.18s"
+        >
+          <h2>Let’s Create Something Exceptional</h2>
+          <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-reveal style="--delay: 0.18s">
+      <div class="footer-accent" aria-hidden="true"></div>
+      <div class="footer-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand" data-reveal style="--delay: 0.22s">
+            <a
+              class="brand footer-logo"
+              href="index.html"
+              aria-label="IMPERIA Events home"
+            >
+              <span class="brand-icon"><i class="fa-solid fa-gem"></i></span>
+              <span class="brand-text">IMPERIA Events</span>
+            </a>
+            <p class="footer-tagline">
+              An ultra-luxury event atelier crafting immersive celebrations,
+              couture design, and flawless execution.
+            </p>
+            <div class="footer-contact">
+              <span
+                ><i class="fa-solid fa-location-dot"></i> Madison Avenue, New
+                York</span
+              >
+              <span
+                ><i class="fa-solid fa-envelope"></i>
+                hello@imperiaevents.com</span
+              >
+              <span><i class="fa-solid fa-phone"></i> +1 (212) 555-0198</span>
+            </div>
+            <div class="footer-social">
+              <a class="social-link" href="#" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a class="social-link" href="#" aria-label="Pinterest"
+                ><i class="fa-brands fa-pinterest-p"></i
+              ></a>
+              <a class="social-link" href="#" aria-label="Behance"
+                ><i class="fa-brands fa-behance"></i
+              ></a>
+              <a class="social-link" href="#" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col" data-reveal style="--delay: 0.26s">
+            <h3>Navigation</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col" data-reveal style="--delay: 0.3s">
+            <h3>Signature Services</h3>
+            <ul class="footer-links">
+              <li><a href="services.html">Weddings & Destination</a></li>
+              <li><a href="services.html">Corporate Galas</a></li>
+              <li><a href="services.html">Private Celebrations</a></li>
+              <li><a href="services.html">Luxury Styling</a></li>
+            </ul>
+          </div>
+          <div
+            class="footer-col footer-access"
+            data-reveal
+            style="--delay: 0.32s"
+          >
+            <h3>Access</h3>
+            <ul class="footer-links">
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="index.html">Home page-1</a></li>
+              <li><a href="homepage2.html">Home page-2</a></li>
+              <li><a href="userdashboard.html">Client Dashboard</a></li>
+              <li><a href="admindashboard.html">Admin Dashboard</a></li>
+            </ul>
+          </div>
+          <div class="footer-col" data-reveal style="--delay: 0.34s">
+            <h3>Private List</h3>
+            <p>
+              Join our curated list for seasonal launches, private showcases,
+              and editorial inspiration.
+            </p>
+            <form class="footer-form">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                aria-label="Email address"
+                required
+              />
+              <button class="btn btn-primary footer-btn" type="submit">
+                Subscribe
+              </button>
+            </form>
+            <span class="footer-note"
+              >We respect your inbox. Unsubscribe anytime.</span
+            >
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 IMPERIA Events. All rights reserved.</p>
+          <div class="footer-mini-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" type="button" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>
+

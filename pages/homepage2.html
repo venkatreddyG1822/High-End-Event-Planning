@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IMPERIA Events is a luxury event planning and styling studio offering couture-level experiences.">
+  <title>IMPERIA Events | Luxury Event Planning & Styling Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/darkmode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="IMPERIA Events home">
+        <span class="brand-icon"><i class="fa-solid fa-gem"></i></span>
+        <span class="brand-text">IMPERIA Events</span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+              Home
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="dropdown" role="menu">
+              <a class="dropdown-link" href="index.html">Home page-1</a>
+              <a class="dropdown-link" href="homepage2.html">Home page-2</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+              Dashboards
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="dropdown" role="menu">
+              <a class="dropdown-link" href="userdashboard.html">Client Dashboard</a>
+              <a class="dropdown-link" href="admindashboard.html">Admin Dashboard</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+        <button class="icon-btn" id="rtlToggle" type="button" aria-label="Toggle RTL" aria-pressed="false">
+          <i class="fa-solid fa-align-right"></i>
+        </button>
+        <a class="btn btn-outline" href="login.html">Login</a>
+        <a class="btn btn-primary" href="contact.html">Book Now</a>
+        <button class="hamburger" id="navToggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero-saas" id="hero-saas" data-reveal style="--delay:0.12s">
+      <div class="hero-saas-bg" aria-hidden="true"></div>
+      <div class="container hero-saas-grid">
+        <div class="hero-saas-content" data-reveal style="--delay:0.18s">
+          <div class="hero-saas-pill">
+            <i class="fa-solid fa-sparkles"></i>
+            Concierge Planning Suite
+          </div>
+          <h1>Orchestrate Luxury Events With a Private Client Command Center</h1>
+          <p>Elevate every touchpoint - from curated vendors to immersive design boards - in one refined platform.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary">Start a Project</a>
+            <a href="contact.html" class="btn btn-outline">Request a Demo</a>
+          </div>
+          <div class="hero-saas-highlights">
+            <div class="highlight">
+              <span class="highlight-value">98%</span>
+              <span class="highlight-label">Client retention</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-value">48</span>
+              <span class="highlight-label">Live events</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-value">4.9</span>
+              <span class="highlight-label">Luxury rating</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-saas-visual" data-reveal style="--delay:0.24s">
+          <div class="visual-frame">
+            <div class="visual-header">
+              <span>IMPERIA Studio</span>
+              <span class="visual-status">Live</span>
+            </div>
+            <div class="visual-body">
+              <div class="visual-card moodboard">
+                <div class="visual-card-title">Mood Board</div>
+                <div class="visual-card-grid">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="visual-card timeline">
+                <div class="visual-card-title">Timeline</div>
+                <div class="visual-card-list">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+              <div class="visual-card guests">
+                <div class="visual-card-title">Guest Journey</div>
+                <div class="visual-avatars">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-token token-1">Bespoke</div>
+          <div class="floating-token token-2">Curated</div>
+          <div class="floating-token token-3">Seamless</div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= FEATURES / BENEFITS ================= -->
+<section class="features" id="features" data-reveal style="--delay:0.12s">
+  <div class="container">
+    
+    <div class="section-head" data-reveal style="--delay:0.16s">
+      <p class="section-eyebrow">Platform Benefits</p>
+      <h2>Designed for Seamless Event Experiences</h2>
+      <p>Powerful tools crafted to simplify planning, enhance collaboration, and deliver exceptional results.</p>
+    </div>
+
+    <div class="features-grid">
+
+      <div class="feature-card" data-reveal style="--delay:0.2s">
+        <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Client Dashboard Access</h3>
+        <p>Track events, timelines, and updates in one centralized platform.</p>
+      </div>
+
+      <div class="feature-card" data-reveal style="--delay:0.26s">
+        <div class="feature-icon"><i class="fa-solid fa-image"></i></div>
+        <h3>Moodboard Collaboration</h3>
+        <p>Share ideas visually with curated inspiration boards and styling concepts.</p>
+      </div>
+
+      <div class="feature-card" data-reveal style="--delay:0.32s">
+        <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
+        <h3>Vendor Management</h3>
+        <p>Organize vendors, contracts, and communications effortlessly.</p>
+      </div>
+
+      <div class="feature-card" data-reveal style="--delay:0.38s">
+        <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Real-time Updates</h3>
+        <p>Stay informed with instant notifications and live event tracking.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="why-choose" id="why-choose" data-reveal style="--delay:0.12s">
+  <div class="container why-grid">
+
+    <!-- LEFT IMAGE -->
+    <div class="why-media" data-reveal style="--delay:0.16s">
+      <div class="why-image"></div>
+      <div class="why-overlay"></div>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="why-content" data-reveal style="--delay:0.2s">
+      <p class="section-eyebrow">Why Choose Us</p>
+      <h2>Where Luxury Meets Precision</h2>
+      <p class="why-subtext">
+        We combine creative excellence with powerful technology to deliver seamless event experiences.
+      </p>
+
+      <div class="why-cards">
+
+        <div class="why-card" data-reveal style="--delay:0.26s">
+          <div class="why-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div>
+            <h3>End-to-End Planning</h3>
+            <p>Comprehensive event management from concept to execution with precision.</p>
+          </div>
+        </div>
+
+        <div class="why-card" data-reveal style="--delay:0.32s">
+          <div class="why-icon"><i class="fa-solid fa-comments"></i></div>
+          <div>
+            <h3>Real-Time Collaboration</h3>
+            <p>Work closely with planners through live updates and seamless communication.</p>
+          </div>
+        </div>
+
+        <div class="why-card" data-reveal style="--delay:0.38s">
+          <div class="why-icon"><i class="fa-solid fa-gem"></i></div>
+          <div>
+            <h3>Luxury Design Expertise</h3>
+            <p>Curated aesthetics and refined styling tailored to your vision.</p>
+          </div>
+        </div>
+
+        <div class="why-card" data-reveal style="--delay:0.44s">
+          <div class="why-icon"><i class="fa-solid fa-check-circle"></i></div>
+          <div>
+            <h3>Seamless Execution</h3>
+            <p>Flawless coordination ensuring every detail is delivered perfectly.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ================= MOODBOARD / GALLERY ================= -->
+<section class="moodboard" id="moodboard" data-reveal style="--delay:0.12s">
+  <div class="container">
+
+    <div class="section-head" data-reveal style="--delay:0.16s">
+      <p class="section-eyebrow">Creative Collaboration</p>
+      <h2>Curated Moodboards & Visual Concepts</h2>
+      <p>Explore styling directions, palettes, and inspirations crafted for your event.</p>
+    </div>
+
+    <div class="moodboard-grid">
+
+      <div class="mood-card" data-reveal style="--delay:0.2s">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80">
+        <div class="mood-overlay">
+          <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+      </div>
+
+      <div class="mood-card tall" data-reveal style="--delay:0.26s">
+        <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80">
+        <div class="mood-overlay">
+          <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+      </div>
+
+      <div class="mood-card" data-reveal style="--delay:0.32s">
+        <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=800&q=80">
+        <div class="mood-overlay">
+          <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+      </div>
+
+      <div class="mood-card wide" data-reveal style="--delay:0.38s">
+        <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=800&q=80">
+        <div class="mood-overlay">
+          <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+      </div>
+
+      <div class="mood-card" data-reveal style="--delay:0.44s">
+        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80">
+        <div class="mood-overlay">
+          <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+      </div>
+
+      <div class="mood-card tall" data-reveal style="--delay:0.5s">
+        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80">
+        <div class="mood-overlay">
+          <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ================= WORKFLOW ================= -->
+<section class="workflow" id="workflow" data-reveal style="--delay:0.12s">
+  <div class="container">
+
+    <div class="section-head" data-reveal style="--delay:0.16s">
+      <p class="section-eyebrow">Workflow</p>
+      <h2>Plan Smarter, Execute Seamlessly</h2>
+      <p>A streamlined process designed for clarity, collaboration, and flawless execution.</p>
+    </div>
+
+    <div class="workflow-steps" data-reveal style="--delay:0.2s">
+
+      <div class="workflow-line">
+        <span class="progress-line"></span>
+      </div>
+
+      <div class="step active">
+        <div class="step-icon"><i class="fa-solid fa-folder-plus"></i></div>
+        <h3>Create Project</h3>
+      </div>
+
+      <div class="step">
+        <div class="step-icon"><i class="fa-solid fa-users"></i></div>
+        <h3>Collaborate</h3>
+      </div>
+
+      <div class="step">
+        <div class="step-icon"><i class="fa-solid fa-check-circle"></i></div>
+        <h3>Approve Designs</h3>
+      </div>
+
+      <div class="step">
+        <div class="step-icon"><i class="fa-solid fa-star"></i></div>
+        <h3>Execute Event</h3>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ================= USE CASES ================= -->
+<section class="usecases" id="usecases" data-reveal style="--delay:0.12s">
+  <div class="container">
+
+    <div class="section-head" data-reveal style="--delay:0.16s">
+      <p class="section-eyebrow">Use Cases</p>
+      <h2>Designed for Every Celebration</h2>
+      <p>From intimate weddings to large-scale corporate events, our platform adapts to every experience.</p>
+    </div>
+
+    <div class="usecases-grid">
+
+      <!-- WEDDINGS -->
+      <div class="usecase-card" data-reveal style="--delay:0.2s">
+        <div class="usecase-bg" style="background-image:url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="usecase-overlay"></div>
+        <div class="usecase-content">
+          <h3>Weddings</h3>
+          <p>Curated planning, moodboards, and seamless execution for unforgettable moments.</p>
+          <a href="services.html" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+
+      <!-- CORPORATE -->
+      <div class="usecase-card" data-reveal style="--delay:0.26s">
+        <div class="usecase-bg" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="usecase-overlay"></div>
+        <div class="usecase-content">
+          <h3>Corporate</h3>
+          <p>Manage launches, conferences, and executive gatherings with precision and impact.</p>
+          <a href="services.html" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+
+      <!-- PRIVATE -->
+      <div class="usecase-card" data-reveal style="--delay:0.32s">
+        <div class="usecase-bg" style="background-image:url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="usecase-overlay"></div>
+        <div class="usecase-content">
+          <h3>Private Events</h3>
+          <p>Celebrate milestones with personalized styling and immersive guest experiences.</p>
+          <a href="services.html" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ================= TESTIMONIALS (LUXE) ================= -->
+<section class="testimonials-luxe" id="testimonials" data-reveal style="--delay:0.12s">
+  <div class="testimonials-luxe-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-head testimonials-luxe-head" data-reveal style="--delay:0.16s">
+      <p class="section-eyebrow">Client Stories</p>
+      <h2>Luxury Experiences, Told by Our Clients</h2>
+      <p>Every celebration is crafted with intention, artistry, and a seamless client journey.</p>
+    </div>
+    <div class="testimonials-luxe-grid">
+      <article class="testimonial-luxe-card" data-reveal style="--delay:0.22s">
+        <span class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></span>
+        <p class="testimonial-luxe-text">IMPERIA orchestrated our corporate summit with flawless precision. The ambience, lighting, and guest flow were a masterclass in refined hospitality.</p>
+        <div class="testimonial-luxe-client">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Sofia Blake">
+          <div>
+            <span class="testimonial-luxe-name">Sofia Blake</span>
+            <span class="testimonial-luxe-role">CEO, Ardent Group</span>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-luxe-card is-featured" data-reveal style="--delay:0.28s">
+        <span class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></span>
+        <p class="testimonial-luxe-text">Our wedding felt like a cinematic dream. IMPERIA translated our story into a breathtaking experience - every floral detail, every moment, every guest touchpoint felt elevated.</p>
+        <div class="testimonial-luxe-client">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80" alt="Isabella Laurent">
+          <div>
+            <span class="testimonial-luxe-name">Isabella Laurent</span>
+            <span class="testimonial-luxe-role">Bride</span>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-luxe-card" data-reveal style="--delay:0.34s">
+        <span class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></span>
+        <p class="testimonial-luxe-text">The private celebration felt intimate yet grand. Their team handled every detail quietly while we simply enjoyed our evening.</p>
+        <div class="testimonial-luxe-client">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Elliot Hayes">
+          <div>
+            <span class="testimonial-luxe-name">Elliot Hayes</span>
+            <span class="testimonial-luxe-role">Private Client</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- ================= CTA SAAS ================= -->
+<section class="cta-saas" id="cta-saas" data-reveal style="--delay:0.12s">
+  <div class="container">
+    <div class="cta-saas-content" data-reveal style="--delay:0.18s">
+      <h2>Start Planning Smarter Today</h2>
+      <a href="contact.html" class="btn btn-primary">Get Started</a>
+    </div>
+  </div>
+</section>
+
+  </main>
+  
+  <footer class="site-footer" data-reveal style="--delay:0.18s">
+    <div class="footer-accent" aria-hidden="true"></div>
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand" data-reveal style="--delay:0.22s">
+          <a class="brand footer-logo" href="index.html" aria-label="IMPERIA Events home">
+            <span class="brand-icon"><i class="fa-solid fa-gem"></i></span>
+            <span class="brand-text">IMPERIA Events</span>
+          </a>
+          <p class="footer-tagline">An ultra-luxury event atelier crafting immersive celebrations, couture design, and flawless execution.</p>
+          <div class="footer-contact">
+            <span><i class="fa-solid fa-location-dot"></i> Madison Avenue, New York</span>
+            <span><i class="fa-solid fa-envelope"></i> hello@imperiaevents.com</span>
+            <span><i class="fa-solid fa-phone"></i> +1 (212) 555-0198</span>
+          </div>
+          <div class="footer-social">
+            <a class="social-link" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social-link" href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a class="social-link" href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+            <a class="social-link" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col" data-reveal style="--delay:0.26s">
+          <h3>Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" data-reveal style="--delay:0.3s">
+          <h3>Signature Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html">Weddings & Destination</a></li>
+            <li><a href="services.html">Corporate Galas</a></li>
+            <li><a href="services.html">Private Celebrations</a></li>
+            <li><a href="services.html">Luxury Styling</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-access" data-reveal style="--delay:0.32s">
+          <h3>Access</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="index.html">Home page-1</a></li>
+            <li><a href="homepage2.html">Home page-2</a></li>
+            <li><a href="userdashboard.html">Client Dashboard</a></li>
+            <li><a href="admindashboard.html">Admin Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" data-reveal style="--delay:0.34s">
+          <h3>Private List</h3>
+          <p>Join our curated list for seasonal launches, private showcases, and editorial inspiration.</p>
+          <form class="footer-form">
+            <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+            <button class="btn btn-primary footer-btn" type="submit">Subscribe</button>
+          </form>
+          <span class="footer-note">We respect your inbox. Unsubscribe anytime.</span>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 IMPERIA Events. All rights reserved.</p>
+        <div class="footer-mini-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
+

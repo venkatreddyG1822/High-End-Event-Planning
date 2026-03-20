@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IMPERIA Events coming soon">
+  <title>IMPERIA Events | Coming Soon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/darkmode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="utility-body">
+  <div class="utility-bg" aria-hidden="true"></div>
+  <div class="utility-overlay" aria-hidden="true"></div>
+
+  <main class="utility-layout">
+    <div class="utility-card">
+      <a class="brand utility-brand" href="index.html" aria-label="IMPERIA Events">
+        <span class="brand-icon"><i class="fa-solid fa-gem"></i></span>
+        <span class="brand-text">IMPERIA Events</span>
+      </a>
+      <span class="utility-badge">Launching Soon</span>
+      <h1>Our Next Experience Is Almost Ready</h1>
+      <p>We are preparing an immersive new destination for our clients. Join the private list to be first in line.</p>
+      <div class="countdown" id="countdown">
+        <div class="countdown-item">
+          <span id="days">12</span>
+          <small>Days</small>
+        </div>
+        <div class="countdown-item">
+          <span id="hours">08</span>
+          <small>Hours</small>
+        </div>
+        <div class="countdown-item">
+          <span id="minutes">24</span>
+          <small>Minutes</small>
+        </div>
+        <div class="countdown-item">
+          <span id="seconds">48</span>
+          <small>Seconds</small>
+        </div>
+      </div>
+      <form class="utility-form">
+        <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+        <button class="btn btn-primary" type="submit">Join Private List</button>
+      </form>
+      <div class="utility-actions">
+        <a class="btn btn-outline" href="index.html">Return Home</a>
+        <a class="btn btn-ghost" href="contact.html">Contact Concierge</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 15);
+
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const distance = targetDate.getTime() - now;
+      const days = Math.max(0, Math.floor(distance / (1000 * 60 * 60 * 24)));
+      const hours = Math.max(0, Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+      const minutes = Math.max(0, Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+      const seconds = Math.max(0, Math.floor((distance % (1000 * 60)) / 1000));
+
+      document.getElementById("days").textContent = String(days).padStart(2, "0");
+      document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+      document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+      document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+    };
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>

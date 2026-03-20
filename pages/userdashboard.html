@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IMPERIA Events client dashboard">
+  <title>IMPERIA Events | Client Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/darkmode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-layout">
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+      <div class="sidebar-brand">
+        <span class="brand-icon"><i class="fa-solid fa-gem"></i></span>
+        <div>
+          <span class="brand-text">IMPERIA Events</span>
+          <span class="brand-subtitle">Client Studio</span>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <button class="sidebar-link active" type="button" data-section="dashboard">
+          <i class="fa-solid fa-chart-line"></i> Dashboard
+        </button>
+        <button class="sidebar-link" type="button" data-section="events">
+          <i class="fa-solid fa-calendar-days"></i> My Events
+        </button>
+        <button class="sidebar-link" type="button" data-section="moodboard">
+          <i class="fa-solid fa-palette"></i> Moodboard
+        </button>
+        <button class="sidebar-link" type="button" data-section="vendors">
+          <i class="fa-solid fa-handshake-angle"></i> Vendors
+        </button>
+        <button class="sidebar-link" type="button" data-section="timeline">
+          <i class="fa-solid fa-timeline"></i> Timeline
+        </button>
+        <button class="sidebar-link" type="button" data-section="messages">
+          <i class="fa-solid fa-comments"></i> Messages
+        </button>
+        <button class="sidebar-link" type="button" data-section="settings">
+          <i class="fa-solid fa-gear"></i> Settings
+        </button>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-card">
+          <p>Next event in</p>
+          <h4>12 Days</h4>
+          <span>Celestial Gala</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div class="topbar-left">
+          <a class="brand topbar-brand" href="index.html" aria-label="IMPERIA Events">
+            <span class="brand-icon"><i class="fa-solid fa-gem"></i></span>
+            <span class="brand-text">IMPERIA Events</span>
+          </a>
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+          <button class="icon-btn" id="rtlToggle" type="button" aria-label="Toggle RTL" aria-pressed="false">
+            <i class="fa-solid fa-align-right"></i>
+          </button>
+          <button class="icon-btn notification-btn" type="button" aria-label="Notifications">
+            <i class="fa-regular fa-bell"></i>
+            <span class="notification-badge">3</span>
+          </button>
+          <div class="profile-dropdown" id="profileDropdown">
+            <button class="profile-btn" id="profileToggle" type="button" aria-expanded="false">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80" alt="Client profile">
+              <span>Isabella</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="profile-menu" id="profileMenu">
+              <a href="#">Profile</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+          <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <main class="dashboard-content">
+        <div class="dashboard-section active" id="dashboard">
+          <div class="section-head">
+            <p class="section-eyebrow">Overview</p>
+            <h2>Welcome back, Isabella</h2>
+            <p>Your private planning dashboard is ready with the latest updates.</p>
+          </div>
+          <div class="overview-grid">
+            <div class="overview-card">
+              <div class="overview-top">
+                <div class="overview-icon"><i class="fa-solid fa-wallet"></i></div>
+                <span>Budget Used</span>
+              </div>
+              <div class="overview-value">$68,400</div>
+              <div class="overview-progress">
+                <span>78% of total</span>
+                <div class="progress-bar"><div style="width:78%"></div></div>
+              </div>
+            </div>
+            <div class="overview-card">
+              <div class="overview-top">
+                <div class="overview-icon"><i class="fa-solid fa-check-double"></i></div>
+                <span>Tasks Completed</span>
+              </div>
+              <div class="overview-value">42 / 58</div>
+              <div class="overview-progress">
+                <span>72% complete</span>
+                <div class="progress-bar"><div style="width:72%"></div></div>
+              </div>
+            </div>
+            <div class="overview-card">
+              <div class="overview-top">
+                <div class="overview-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                <span>Vendors Confirmed</span>
+              </div>
+              <div class="overview-value">18</div>
+              <div class="overview-progress">
+                <span>6 pending</span>
+                <div class="progress-bar"><div style="width:75%"></div></div>
+              </div>
+            </div>
+            <div class="overview-card">
+              <div class="overview-top">
+                <div class="overview-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <span>Event Progress</span>
+              </div>
+              <div class="overview-value">86%</div>
+              <div class="overview-progress">
+                <span>On track</span>
+                <div class="progress-bar"><div style="width:86%"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="analytics-section">
+            <div class="analytics-header">
+              <div>
+                <p class="section-eyebrow">Analytics</p>
+                <h3>Event Performance</h3>
+              </div>
+              <span class="analytics-note">Live insights - Updated today</span>
+            </div>
+            <div class="analytics-grid">
+              <div class="analytics-card">
+                <div class="analytics-card-head">
+                  <h4>Event Progress</h4>
+                  <span>Timeline</span>
+                </div>
+                <div class="chart-wrap">
+                  <canvas id="progressChart" height="220"></canvas>
+                </div>
+              </div>
+              <div class="analytics-card">
+                <div class="analytics-card-head">
+                  <h4>Budget Distribution</h4>
+                  <span>Current spend</span>
+                </div>
+                <div class="chart-wrap chart-donut">
+                  <canvas id="budgetChart" height="220"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="events-analytics">
+            <div class="dashboard-panel">
+              <h4>Recent Activity</h4>
+              <ul class="panel-list">
+                <li><span>Floral renderings</span><strong>Uploaded</strong></li>
+                <li><span>Vendor contracts</span><strong>3 signed</strong></li>
+                <li><span>Guest list</span><strong>Updated</strong></li>
+              </ul>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Upcoming Approvals</h4>
+              <ul class="panel-list">
+                <li><span>Lighting design</span><strong>Due Mar 22</strong></li>
+                <li><span>Menu tasting</span><strong>Mar 25</strong></li>
+                <li><span>Stage layout</span><strong>Mar 28</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-section" id="events">
+          <div class="section-head">
+            <p class="section-eyebrow">My Events</p>
+            <h2>Upcoming Celebrations</h2>
+            <p>View your private calendar and event timelines.</p>
+          </div>
+          <div class="events-grid">
+            <article class="event-card">
+              <div>
+                <h4>Celestial Gala</h4>
+                <span>April 02, 2026 - New York</span>
+              </div>
+              <span class="status-chip">In Production</span>
+            </article>
+            <article class="event-card">
+              <div>
+                <h4>Private Soiree</h4>
+                <span>June 18, 2026 - Amalfi Coast</span>
+              </div>
+              <span class="status-chip">Planning</span>
+            </article>
+            <article class="event-card">
+              <div>
+                <h4>Destination Wedding</h4>
+                <span>September 11, 2026 - Lake Como</span>
+              </div>
+              <span class="status-chip">Concept</span>
+            </article>
+          </div>
+          <div class="events-analytics">
+            <div class="analytics-card">
+              <div class="analytics-card-head">
+                <h4>Event Completion</h4>
+                <span>Last 6 months</span>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="eventsChart" height="220"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Event Highlights</h4>
+              <ul class="panel-list">
+                <li><span>Venue locked</span><strong>Four Seasons</strong></li>
+                <li><span>Design board</span><strong>Approved</strong></li>
+                <li><span>Guest count</span><strong>320 confirmed</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboard-list">
+            <div class="list-item">
+              <div>
+                <h4>Client briefing</h4>
+                <span>March 21 - 10:00 AM</span>
+              </div>
+              <span class="status-chip">Scheduled</span>
+            </div>
+            <div class="list-item">
+              <div>
+                <h4>Vendor walkthrough</h4>
+                <span>March 23 - 2:00 PM</span>
+              </div>
+              <span class="status-chip">Confirmed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-section" id="moodboard">
+          <div class="section-head">
+            <p class="section-eyebrow">Moodboard</p>
+            <h2>Design Direction</h2>
+            <p>Review curated palettes, textures, and styling compositions.</p>
+          </div>
+          <div class="moodboard-masonry">
+            <div class="mood-item">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Ceremony styling">
+              <div class="mood-overlay">
+                <button class="mood-action"><i class="fa-regular fa-heart"></i></button>
+                <button class="mood-action"><i class="fa-regular fa-bookmark"></i></button>
+              </div>
+            </div>
+            <div class="mood-item palette">
+              <div class="palette-swatches">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <p>Amber - Sand - Champagne - Velvet</p>
+            </div>
+            <div class="mood-item">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Floral styling">
+              <div class="mood-overlay">
+                <button class="mood-action"><i class="fa-regular fa-heart"></i></button>
+                <button class="mood-action"><i class="fa-regular fa-bookmark"></i></button>
+              </div>
+            </div>
+            <div class="mood-item">
+              <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80" alt="Table setting">
+              <div class="mood-overlay">
+                <button class="mood-action"><i class="fa-regular fa-heart"></i></button>
+                <button class="mood-action"><i class="fa-regular fa-bookmark"></i></button>
+              </div>
+            </div>
+            <div class="mood-item palette">
+              <div class="palette-swatches">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <p>Ivory - Mocha - Gold - Onyx</p>
+            </div>
+          </div>
+          <div class="moodboard-insights">
+            <div class="analytics-card">
+              <div class="analytics-card-head">
+                <h4>Style Mix</h4>
+                <span>Palette ratios</span>
+              </div>
+              <div class="chart-wrap chart-donut">
+                <canvas id="moodboardChart" height="220"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Saved Notes</h4>
+              <ul class="panel-list">
+                <li><span>Textures</span><strong>Velvet + Marble</strong></li>
+                <li><span>Florals</span><strong>Garden roses</strong></li>
+                <li><span>Lighting</span><strong>Candle glow</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboard-list">
+            <div class="list-item">
+              <div>
+                <h4>Tablescape concept</h4>
+                <span>Awaiting approval</span>
+              </div>
+              <span class="status-chip">Review</span>
+            </div>
+            <div class="list-item">
+              <div>
+                <h4>Floral palette</h4>
+                <span>Approved by client</span>
+              </div>
+              <span class="status-chip">Approved</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-section" id="vendors">
+          <div class="section-head">
+            <p class="section-eyebrow">Vendors</p>
+            <h2>Trusted Partners</h2>
+            <p>Review vendor status, contracts, and communication.</p>
+          </div>
+          <div class="vendors-grid">
+            <div class="vendor-card">
+              <div>
+                <h4>Lumine Florals</h4>
+                <span>Floral Artistry</span>
+              </div>
+              <div class="vendor-actions">
+                <span class="status-chip">Confirmed</span>
+                <button class="btn btn-outline" type="button">View</button>
+              </div>
+            </div>
+            <div class="vendor-card">
+              <div>
+                <h4>Atelier Lighting</h4>
+                <span>Lighting & Production</span>
+              </div>
+              <div class="vendor-actions">
+                <span class="status-chip">Pending</span>
+                <button class="btn btn-outline" type="button">Review</button>
+              </div>
+            </div>
+            <div class="vendor-card">
+              <div>
+                <h4>Maison Catering</h4>
+                <span>Luxury Dining</span>
+              </div>
+              <div class="vendor-actions">
+                <span class="status-chip">Confirmed</span>
+                <button class="btn btn-outline" type="button">View</button>
+              </div>
+            </div>
+          </div>
+          <div class="vendors-analytics">
+            <div class="analytics-card">
+              <div class="analytics-card-head">
+                <h4>Vendor Status</h4>
+                <span>Confirmed vs Pending</span>
+              </div>
+              <div class="chart-wrap chart-donut">
+                <canvas id="vendorsChart" height="220"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Upcoming Reviews</h4>
+              <ul class="panel-list">
+                <li><span>Lighting</span><strong>Contract finalization</strong></li>
+                <li><span>Entertainment</span><strong>Shortlist due</strong></li>
+                <li><span>Rentals</span><strong>Site visit booked</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="vendors-table">
+            <div class="vendor-row">
+              <span>Maison Catering</span>
+              <span>Luxury Dining</span>
+              <span class="status-chip">Confirmed</span>
+              <button class="btn btn-outline" type="button">Contract</button>
+            </div>
+            <div class="vendor-row">
+              <span>Atelier Lighting</span>
+              <span>Production</span>
+              <span class="status-chip">Pending</span>
+              <button class="btn btn-outline" type="button">Review</button>
+            </div>
+            <div class="vendor-row">
+              <span>Lumine Florals</span>
+              <span>Floral Artistry</span>
+              <span class="status-chip">Confirmed</span>
+              <button class="btn btn-outline" type="button">Details</button>
+            </div>
+          </div>
+          <div class="dashboard-list">
+            <div class="list-item">
+              <div>
+                <h4>Vendor contracts</h4>
+                <span>2 awaiting signature</span>
+              </div>
+              <span class="status-chip">Pending</span>
+            </div>
+            <div class="list-item">
+              <div>
+                <h4>Site inspection</h4>
+                <span>Four Seasons - Mar 24</span>
+              </div>
+              <span class="status-chip">Scheduled</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-section" id="timeline">
+          <div class="section-head">
+            <p class="section-eyebrow">Timeline</p>
+            <h2>Production Milestones</h2>
+            <p>Stay aligned on key moments leading to your event.</p>
+          </div>
+          <div class="timeline-preview">
+            <div class="timeline-row">
+              <span>Design finalization</span>
+              <span>Mar 24</span>
+            </div>
+            <div class="timeline-row">
+              <span>Vendor rehearsal</span>
+              <span>Mar 29</span>
+            </div>
+            <div class="timeline-row">
+              <span>Event day</span>
+              <span>Apr 02</span>
+            </div>
+          </div>
+          <div class="timeline-analytics">
+            <div class="analytics-card">
+              <div class="analytics-card-head">
+                <h4>Milestone Progress</h4>
+                <span>Weekly cadence</span>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="timelineChart" height="220"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Next Steps</h4>
+              <ul class="panel-list">
+                <li><span>Final walk-through</span><strong>Mar 30</strong></li>
+                <li><span>Lighting focus</span><strong>Mar 31</strong></li>
+                <li><span>Guest briefing</span><strong>Apr 01</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboard-list">
+            <div class="list-item">
+              <div>
+                <h4>Production call</h4>
+                <span>March 27 - 5:00 PM</span>
+              </div>
+              <span class="status-chip">Scheduled</span>
+            </div>
+            <div class="list-item">
+              <div>
+                <h4>Menu tasting</h4>
+                <span>March 28 - 12:00 PM</span>
+              </div>
+              <span class="status-chip">Confirmed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-section" id="messages">
+          <div class="section-head">
+            <p class="section-eyebrow">Messages</p>
+            <h2>Concierge Inbox</h2>
+            <p>Private communication with your planning team.</p>
+          </div>
+          <div class="dashboard-list">
+            <div class="list-item">
+              <div>
+                <h4>Design team</h4>
+                <span>New floral renderings are ready for review.</span>
+              </div>
+              <span class="status-chip">New</span>
+            </div>
+            <div class="list-item">
+              <div>
+                <h4>Production lead</h4>
+                <span>Lighting mock-up schedule confirmed.</span>
+              </div>
+              <span class="status-chip">Today</span>
+            </div>
+          </div>
+          <div class="messages-analytics">
+            <div class="analytics-card">
+              <div class="analytics-card-head">
+                <h4>Response Time</h4>
+                <span>Last 14 days</span>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="messagesChart" height="220"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Inbox Summary</h4>
+              <ul class="panel-list">
+                <li><span>Unread</span><strong>4 messages</strong></li>
+                <li><span>Avg reply</span><strong>2h 18m</strong></li>
+                <li><span>Priority</span><strong>1 flagged</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="events-grid">
+            <article class="event-card">
+              <div>
+                <h4>Concierge</h4>
+                <span>Personal assistant</span>
+              </div>
+              <span class="status-chip">Online</span>
+            </article>
+            <article class="event-card">
+              <div>
+                <h4>Design Lead</h4>
+                <span>Styling & florals</span>
+              </div>
+              <span class="status-chip">Available</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="dashboard-section" id="settings">
+          <div class="section-head">
+            <p class="section-eyebrow">Settings</p>
+            <h2>Account Preferences</h2>
+            <p>Manage your profile, notifications, and privacy.</p>
+          </div>
+          <div class="settings-grid">
+            <div class="settings-card">
+              <h4>Profile</h4>
+              <p>Update contact information and personal details.</p>
+              <button class="btn btn-outline" type="button">Edit Profile</button>
+            </div>
+            <div class="settings-card">
+              <h4>Notifications</h4>
+              <p>Choose which updates you receive.</p>
+              <button class="btn btn-outline" type="button">Manage Alerts</button>
+            </div>
+          </div>
+          <div class="settings-analytics">
+            <div class="analytics-card">
+              <div class="analytics-card-head">
+                <h4>Preferences Mix</h4>
+                <span>Channels</span>
+              </div>
+              <div class="chart-wrap chart-donut">
+                <canvas id="settingsChart" height="220"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Security</h4>
+              <ul class="panel-list">
+                <li><span>Two-factor</span><strong>Enabled</strong></li>
+                <li><span>Last login</span><strong>2 hours ago</strong></li>
+                <li><span>Devices</span><strong>3 active</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboard-list">
+            <div class="list-item">
+              <div>
+                <h4>Login alerts</h4>
+                <span>Enabled for new devices</span>
+              </div>
+              <span class="status-chip">Active</span>
+            </div>
+            <div class="list-item">
+              <div>
+                <h4>Data export</h4>
+                <span>Scheduled weekly</span>
+              </div>
+              <span class="status-chip">Scheduled</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../assets/js/dashboard.js" defer></script>
+</body>
+</html>
+
+

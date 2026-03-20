@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IMPERIA Events admin dashboard">
+  <title>IMPERIA Events | Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/darkmode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-layout">
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+      <div class="sidebar-brand">
+        <span class="brand-icon"><i class="fa-solid fa-gem"></i></span>
+        <div>
+          <span class="brand-text">IMPERIA Events</span>
+          <span class="brand-subtitle">Admin Console</span>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <button class="sidebar-link active" type="button" data-section="admin-overview">
+          <i class="fa-solid fa-chart-line"></i> Overview
+        </button>
+        <button class="sidebar-link" type="button" data-section="admin-users">
+          <i class="fa-solid fa-users"></i> Users
+        </button>
+        <button class="sidebar-link" type="button" data-section="admin-vendors">
+          <i class="fa-solid fa-handshake-angle"></i> Vendors
+        </button>
+        <button class="sidebar-link" type="button" data-section="admin-orders">
+          <i class="fa-solid fa-clipboard-list"></i> Bookings
+        </button>
+        <button class="sidebar-link" type="button" data-section="admin-content">
+          <i class="fa-solid fa-layer-group"></i> Content
+        </button>
+        <button class="sidebar-link" type="button" data-section="admin-messages">
+          <i class="fa-solid fa-comments"></i> Messages
+        </button>
+        <button class="sidebar-link" type="button" data-section="admin-reports">
+          <i class="fa-solid fa-chart-pie"></i> Reports
+        </button>
+        <button class="sidebar-link" type="button" data-section="admin-settings">
+          <i class="fa-solid fa-gear"></i> Settings
+        </button>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-card">
+          <p>System health</p>
+          <h4>Operational</h4>
+          <span>99.8% uptime</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div class="topbar-left">
+          <a class="brand topbar-brand" href="index.html" aria-label="IMPERIA Events">
+            <span class="brand-icon"><i class="fa-solid fa-gem"></i></span>
+            <span class="brand-text">IMPERIA Events</span>
+          </a>
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+          <button class="icon-btn" id="rtlToggle" type="button" aria-label="Toggle RTL" aria-pressed="false">
+            <i class="fa-solid fa-align-right"></i>
+          </button>
+          <button class="icon-btn notification-btn" type="button" aria-label="Notifications">
+            <i class="fa-regular fa-bell"></i>
+            <span class="notification-badge">5</span>
+          </button>
+          <div class="profile-dropdown" id="profileDropdown">
+            <button class="profile-btn" id="profileToggle" type="button" aria-expanded="false">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Admin profile">
+              <span>Admin</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="profile-menu" id="profileMenu">
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+          <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <main class="dashboard-content">
+        <div class="dashboard-section active" id="admin-overview">
+          <div class="section-head">
+            <p class="section-eyebrow">Admin Overview</p>
+            <h2>Welcome back, Ava</h2>
+            <p>Monitor the studio pipeline, active clients, and revenue performance.</p>
+          </div>
+          <div class="overview-grid">
+            <div class="overview-card">
+              <div class="overview-top">
+                <div class="overview-icon"><i class="fa-solid fa-star"></i></div>
+                <span>Active Events</span>
+              </div>
+              <div class="overview-value">12</div>
+              <div class="overview-progress">
+                <span>3 launching this month</span>
+                <div class="progress-bar"><div style="width:64%"></div></div>
+              </div>
+            </div>
+            <div class="overview-card">
+              <div class="overview-top">
+                <div class="overview-icon"><i class="fa-solid fa-users"></i></div>
+                <span>Active Clients</span>
+              </div>
+              <div class="overview-value">34</div>
+              <div class="overview-progress">
+                <span>Retention 92%</span>
+                <div class="progress-bar"><div style="width:92%"></div></div>
+              </div>
+            </div>
+            <div class="overview-card">
+              <div class="overview-top">
+                <div class="overview-icon"><i class="fa-solid fa-wallet"></i></div>
+                <span>Revenue</span>
+              </div>
+              <div class="overview-value">$1.2M</div>
+              <div class="overview-progress">
+                <span>YTD target 74%</span>
+                <div class="progress-bar"><div style="width:74%"></div></div>
+              </div>
+            </div>
+            <div class="overview-card">
+              <div class="overview-top">
+                <div class="overview-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                <span>Tasks Closed</span>
+              </div>
+              <div class="overview-value">486</div>
+              <div class="overview-progress">
+                <span>On schedule</span>
+                <div class="progress-bar"><div style="width:81%"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="analytics-section">
+            <div class="analytics-header">
+              <div>
+                <p class="section-eyebrow">Analytics</p>
+                <h3>Studio Performance</h3>
+              </div>
+              <span class="analytics-note">Live insights - Updated today</span>
+            </div>
+            <div class="analytics-grid">
+              <div class="analytics-card">
+                <div class="analytics-card-head">
+                  <h4>Event Progress</h4>
+                  <span>Pipeline</span>
+                </div>
+                <div class="chart-wrap">
+                  <canvas id="progressChart" height="220"></canvas>
+                </div>
+              </div>
+              <div class="analytics-card">
+                <div class="analytics-card-head">
+                  <h4>Budget Allocation</h4>
+                  <span>Current spend</span>
+                </div>
+                <div class="chart-wrap chart-donut">
+                  <canvas id="budgetChart" height="220"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="events-analytics">
+            <div class="dashboard-panel">
+              <h4>Operational Highlights</h4>
+              <ul class="panel-list">
+                <li><span>VIP clients onboarded</span><strong>6 this quarter</strong></li>
+                <li><span>Production deadlines</span><strong>95% on time</strong></li>
+                <li><span>Revenue pipeline</span><strong>$2.3M</strong></li>
+              </ul>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Upcoming Reviews</h4>
+              <ul class="panel-list">
+                <li><span>Executive meeting</span><strong>Mar 22</strong></li>
+                <li><span>Studio planning</span><strong>Mar 24</strong></li>
+                <li><span>Vendor summit</span><strong>Mar 29</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-section" id="admin-users">
+          <div class="section-head">
+            <p class="section-eyebrow">Users</p>
+            <h2>Client Portfolio</h2>
+            <p>Track VIP clients, planners, and internal collaborators.</p>
+          </div>
+          <div class="dashboard-list">
+            <div class="list-item">
+              <div>
+                <h4>Isabella Laurent</h4>
+                <span>VIP Bride - Celestial Gala</span>
+              </div>
+              <span class="status-chip">Priority</span>
+            </div>
+            <div class="list-item">
+              <div>
+                <h4>Noah Reed</h4>
+                <span>Corporate Client - Brand Summit</span>
+              </div>
+              <span class="status-chip">Active</span>
+            </div>
+            <div class="list-item">
+              <div>
+                <h4>Amelia Rose</h4>
+                <span>Private Client - Lake Como</span>
+              </div>
+              <span class="status-chip">Onboarding</span>
+            </div>
+          </div>
+          <div class="events-analytics">
+            <div class="analytics-card">
+              <div class="analytics-card-head">
+                <h4>Client Segments</h4>
+                <span>Luxury tiers</span>
+              </div>
+              <div class="chart-wrap chart-donut">
+                <canvas id="moodboardChart" height="220"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Client Focus</h4>
+              <ul class="panel-list">
+                <li><span>VIP concierge</span><strong>12 clients</strong></li>
+                <li><span>Planning pipeline</span><strong>9 leads</strong></li>
+                <li><span>Renewals</span><strong>5 contracts</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="events-grid">
+            <article class="event-card">
+              <div>
+                <h4>New inquiry</h4>
+                <span>4 requests awaiting review</span>
+              </div>
+              <span class="status-chip">New</span>
+            </article>
+            <article class="event-card">
+              <div>
+                <h4>Client surveys</h4>
+                <span>Average rating 4.9</span>
+              </div>
+              <span class="status-chip">Excellent</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="dashboard-section" id="admin-vendors">
+          <div class="section-head">
+            <p class="section-eyebrow">Vendors</p>
+            <h2>Elite Partners</h2>
+            <p>Manage contracts, approvals, and vendor performance.</p>
+          </div>
+          <div class="vendors-grid">
+            <div class="vendor-card">
+              <div>
+                <h4>Lumine Florals</h4>
+                <span>Floral Artistry</span>
+              </div>
+              <div class="vendor-actions">
+                <span class="status-chip">Confirmed</span>
+                <button class="btn btn-outline" type="button">View</button>
+              </div>
+            </div>
+            <div class="vendor-card">
+              <div>
+                <h4>Atelier Lighting</h4>
+                <span>Lighting & Production</span>
+              </div>
+              <div class="vendor-actions">
+                <span class="status-chip">Pending</span>
+                <button class="btn btn-outline" type="button">Review</button>
+              </div>
+            </div>
+            <div class="vendor-card">
+              <div>
+                <h4>Maison Catering</h4>
+                <span>Luxury Dining</span>
+              </div>
+              <div class="vendor-actions">
+                <span class="status-chip">Confirmed</span>
+                <button class="btn btn-outline" type="button">View</button>
+              </div>
+            </div>
+          </div>
+          <div class="vendors-analytics">
+            <div class="analytics-card">
+              <div class="analytics-card-head">
+                <h4>Vendor Status</h4>
+                <span>Confirmed vs Pending</span>
+              </div>
+              <div class="chart-wrap chart-donut">
+                <canvas id="vendorsChart" height="220"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Upcoming Reviews</h4>
+              <ul class="panel-list">
+                <li><span>Lighting</span><strong>Contract finalization</strong></li>
+                <li><span>Entertainment</span><strong>Shortlist due</strong></li>
+                <li><span>Rentals</span><strong>Site visit booked</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="vendors-table">
+            <div class="vendor-row">
+              <span>Maison Catering</span>
+              <span>Luxury Dining</span>
+              <span class="status-chip">Confirmed</span>
+              <button class="btn btn-outline" type="button">Contract</button>
+            </div>
+            <div class="vendor-row">
+              <span>Atelier Lighting</span>
+              <span>Production</span>
+              <span class="status-chip">Pending</span>
+              <button class="btn btn-outline" type="button">Review</button>
+            </div>
+            <div class="vendor-row">
+              <span>Lumine Florals</span>
+              <span>Floral Artistry</span>
+              <span class="status-chip">Confirmed</span>
+              <button class="btn btn-outline" type="button">Details</button>
+            </div>
+          </div>
+          <div class="dashboard-list">
+            <div class="list-item">
+              <div>
+                <h4>Vendor onboarding</h4>
+                <span>2 partners pending documents</span>
+              </div>
+              <span class="status-chip">Pending</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-section" id="admin-orders">
+          <div class="section-head">
+            <p class="section-eyebrow">Bookings</p>
+            <h2>Upcoming Commitments</h2>
+            <p>Review signed contracts, deposits, and key milestones.</p>
+          </div>
+          <div class="dashboard-list">
+            <div class="list-item">
+              <div>
+                <h4>Celestial Gala</h4>
+                <span>Deposit received - $120k</span>
+              </div>
+              <span class="status-chip">Confirmed</span>
+            </div>
+            <div class="list-item">
+              <div>
+                <h4>Amalfi Private Soiree</h4>
+                <span>Contract sent - awaiting signature</span>
+              </div>
+              <span class="status-chip">Pending</span>
+            </div>
+          </div>
+          <div class="timeline-analytics">
+            <div class="analytics-card">
+              <div class="analytics-card-head">
+                <h4>Booking Flow</h4>
+                <span>Quarterly trend</span>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="timelineChart" height="220"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Next Follow-ups</h4>
+              <ul class="panel-list">
+                <li><span>Contract review</span><strong>Today</strong></li>
+                <li><span>Deposit reminder</span><strong>Mar 22</strong></li>
+                <li><span>Final payment</span><strong>Apr 12</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="events-grid">
+            <article class="event-card">
+              <div>
+                <h4>Contracts signed</h4>
+                <span>18 this quarter</span>
+              </div>
+              <span class="status-chip">+12%</span>
+            </article>
+            <article class="event-card">
+              <div>
+                <h4>Deposits received</h4>
+                <span>$480k total</span>
+              </div>
+              <span class="status-chip">On track</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="dashboard-section" id="admin-content">
+          <div class="section-head">
+            <p class="section-eyebrow">Content</p>
+            <h2>Studio Assets</h2>
+            <p>Manage editorial content, galleries, and announcements.</p>
+          </div>
+          <div class="events-grid">
+            <article class="event-card">
+              <div>
+                <h4>Spring Editorial</h4>
+                <span>Gallery update - 12 assets</span>
+              </div>
+              <span class="status-chip">Publishing</span>
+            </article>
+            <article class="event-card">
+              <div>
+                <h4>Client Spotlight</h4>
+                <span>Draft ready for review</span>
+              </div>
+              <span class="status-chip">Draft</span>
+            </article>
+            <article class="event-card">
+              <div>
+                <h4>Vendor Showcase</h4>
+                <span>Scheduled - April 05</span>
+              </div>
+              <span class="status-chip">Scheduled</span>
+            </article>
+          </div>
+          <div class="events-analytics">
+            <div class="analytics-card">
+              <div class="analytics-card-head">
+                <h4>Content Output</h4>
+                <span>Monthly trend</span>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="eventsChart" height="220"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Publishing Queue</h4>
+              <ul class="panel-list">
+                <li><span>Gallery refresh</span><strong>Due in 2 days</strong></li>
+                <li><span>Instagram rollout</span><strong>5 posts</strong></li>
+                <li><span>Newsletter</span><strong>Drafting</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboard-list">
+            <div class="list-item">
+              <div>
+                <h4>Website updates</h4>
+                <span>3 new stories queued</span>
+              </div>
+              <span class="status-chip">Pending</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-section" id="admin-messages">
+          <div class="section-head">
+            <p class="section-eyebrow">Messages</p>
+            <h2>Team Inbox</h2>
+            <p>Monitor client communications and internal threads.</p>
+          </div>
+          <div class="dashboard-list">
+            <div class="list-item">
+              <div>
+                <h4>Design team</h4>
+                <span>New tablescape mockups uploaded.</span>
+              </div>
+              <span class="status-chip">New</span>
+            </div>
+            <div class="list-item">
+              <div>
+                <h4>Vendor relations</h4>
+                <span>Awaiting contract countersignature.</span>
+              </div>
+              <span class="status-chip">Today</span>
+            </div>
+          </div>
+          <div class="messages-analytics">
+            <div class="analytics-card">
+              <div class="analytics-card-head">
+                <h4>Response Time</h4>
+                <span>Last 14 days</span>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="messagesChart" height="220"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Inbox Summary</h4>
+              <ul class="panel-list">
+                <li><span>Unread</span><strong>7 messages</strong></li>
+                <li><span>Avg reply</span><strong>1h 42m</strong></li>
+                <li><span>Priority</span><strong>2 flagged</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="events-grid">
+            <article class="event-card">
+              <div>
+                <h4>Priority threads</h4>
+                <span>3 escalations</span>
+              </div>
+              <span class="status-chip">Urgent</span>
+            </article>
+            <article class="event-card">
+              <div>
+                <h4>Internal updates</h4>
+                <span>12 unread notes</span>
+              </div>
+              <span class="status-chip">New</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="dashboard-section" id="admin-reports">
+          <div class="section-head">
+            <p class="section-eyebrow">Reports</p>
+            <h2>Insights & Growth</h2>
+            <p>Track KPIs across revenue, bookings, and client satisfaction.</p>
+          </div>
+          <div class="analytics-section">
+            <div class="analytics-grid">
+              <div class="analytics-card">
+                <div class="analytics-card-head">
+                  <h4>Revenue Mix</h4>
+                  <span>By service</span>
+                </div>
+                <div class="chart-wrap chart-donut">
+                  <canvas id="reportsChart" height="220"></canvas>
+                </div>
+              </div>
+              <div class="dashboard-panel">
+                <h4>Key Metrics</h4>
+                <ul class="panel-list">
+                  <li><span>Average booking</span><strong>$98k</strong></li>
+                  <li><span>Referral rate</span><strong>42%</strong></li>
+                  <li><span>NPS score</span><strong>71</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="events-analytics">
+            <div class="analytics-card">
+              <div class="analytics-card-head">
+                <h4>Client Satisfaction</h4>
+                <span>Quarterly trend</span>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="eventsChart" height="220"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Strategic Notes</h4>
+              <ul class="panel-list">
+                <li><span>Luxury tier growth</span><strong>+18%</strong></li>
+                <li><span>Corporate demand</span><strong>Stable</strong></li>
+                <li><span>Retention</span><strong>92%</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-section" id="admin-settings">
+          <div class="section-head">
+            <p class="section-eyebrow">Settings</p>
+            <h2>Studio Preferences</h2>
+            <p>Manage permissions, notifications, and brand settings.</p>
+          </div>
+          <div class="settings-grid">
+            <div class="settings-card">
+              <h4>Permissions</h4>
+              <p>Assign roles and approve access levels.</p>
+              <button class="btn btn-outline" type="button">Manage Roles</button>
+            </div>
+            <div class="settings-card">
+              <h4>Notifications</h4>
+              <p>Configure alerts for the team and clients.</p>
+              <button class="btn btn-outline" type="button">Edit Alerts</button>
+            </div>
+          </div>
+          <div class="settings-analytics">
+            <div class="analytics-card">
+              <div class="analytics-card-head">
+                <h4>Preferences Mix</h4>
+                <span>Channels</span>
+              </div>
+              <div class="chart-wrap chart-donut">
+                <canvas id="settingsChart" height="220"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-panel">
+              <h4>Security</h4>
+              <ul class="panel-list">
+                <li><span>Two-factor</span><strong>Enabled</strong></li>
+                <li><span>Last audit</span><strong>Mar 18</strong></li>
+                <li><span>Devices</span><strong>12 active</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboard-list">
+            <div class="list-item">
+              <div>
+                <h4>Admin access log</h4>
+                <span>4 admins active</span>
+              </div>
+              <span class="status-chip">Secure</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../assets/js/dashboard.js" defer></script>
+</body>
+</html>

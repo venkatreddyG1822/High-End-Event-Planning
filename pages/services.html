@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="IMPERIA Events is a luxury event planning and styling studio offering couture-level experiences."
+    />
+    <title>IMPERIA Events | Luxury Event Planning & Styling Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/darkmode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="IMPERIA Events home">
+          <span class="brand-icon"><i class="fa-solid fa-gem"></i></span>
+          <span class="brand-text">IMPERIA Events</span>
+        </a>
+
+        <nav class="nav" id="primaryNav" aria-label="Primary">
+          <ul class="nav-list">
+            <li class="nav-item has-dropdown">
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Home
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="dropdown" role="menu">
+                <a class="dropdown-link" href="index.html">Home page-1</a>
+                <a class="dropdown-link" href="homepage2.html">Home page-2</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item has-dropdown">
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dashboards
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="dropdown" role="menu">
+                <a class="dropdown-link" href="userdashboard.html"
+                  >Client Dashboard</a
+                >
+                <a class="dropdown-link" href="admindashboard.html"
+                  >Admin Dashboard</a
+                >
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="icon-btn"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+            aria-pressed="false"
+          >
+            <i class="fa-regular fa-moon"></i>
+          </button>
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            aria-label="Toggle RTL"
+            aria-pressed="false"
+          >
+            <i class="fa-solid fa-align-right"></i>
+          </button>
+          <a class="btn btn-outline" href="login.html">Login</a>
+          <a class="btn btn-primary" href="contact.html">Book Now</a>
+          <button
+            class="hamburger"
+            id="navToggle"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="primaryNav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ================= SERVICES HERO ================= -->
+      <section class="services-hero" id="services-hero">
+        <div class="services-hero-bg"></div>
+        <div class="services-hero-overlay"></div>
+
+        <div class="container services-hero-content" data-reveal>
+          <h1>Luxury Services, Seamlessly Delivered</h1>
+          <p>From concept to execution, every detail curated with precision</p>
+          <a href="pricing.html" class="btn btn-primary">View Pricing</a>
+        </div>
+      </section>
+      <!-- ================= SERVICES GRID ================= -->
+      <section
+        class="services-grid-section"
+        id="services"
+        data-reveal
+        style="--delay: 0.12s"
+      >
+        <div class="container">
+          <div class="section-head" data-reveal style="--delay: 0.16s">
+            <p class="section-eyebrow">Our Services</p>
+            <h2>Curated Experiences for Every Occasion</h2>
+            <p>
+              Each service is crafted with precision, creativity, and seamless
+              execution.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <!-- CARD -->
+            <div class="service-card" data-reveal style="--delay: 0.2s">
+              <div
+                class="service-bg"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80&quot;);
+                "
+              ></div>
+              <div class="service-overlay"></div>
+              <div class="service-content">
+                <h3>Weddings</h3>
+                <p>
+                  Bespoke planning and styling for unforgettable celebrations.
+                </p>
+                <a href="contact.html" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="service-card" data-reveal style="--delay: 0.26s">
+              <div
+                class="service-bg"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80&quot;);
+                "
+              ></div>
+              <div class="service-overlay"></div>
+              <div class="service-content">
+                <h3>Corporate Events</h3>
+                <p>
+                  Elevated brand experiences, launches, and executive
+                  gatherings.
+                </p>
+                <a href="contact.html" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="service-card" data-reveal style="--delay: 0.32s">
+              <div
+                class="service-bg"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80&quot;);
+                "
+              ></div>
+              <div class="service-overlay"></div>
+              <div class="service-content">
+                <h3>Private Celebrations</h3>
+                <p>
+                  Curated moments with refined ambiance and immersive design.
+                </p>
+                <a href="contact.html" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="service-card" data-reveal style="--delay: 0.38s">
+              <div
+                class="service-bg"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1200&q=80&quot;);
+                "
+              ></div>
+              <div class="service-overlay"></div>
+              <div class="service-content">
+                <h3>Luxury Styling</h3>
+                <p>
+                  Editorial-level styling, florals, and bespoke visual concepts.
+                </p>
+                <a href="contact.html" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= SERVICE DETAIL ================= -->
+      <section
+        class="service-detail"
+        id="service-detail"
+        data-reveal
+        style="--delay: 0.12s"
+      >
+        <div class="container service-detail-grid">
+          <!-- IMAGE -->
+          <div class="service-detail-media" data-reveal style="--delay: 0.16s">
+            <div class="service-detail-image"></div>
+          </div>
+
+          <!-- CONTENT -->
+          <div
+            class="service-detail-content"
+            data-reveal
+            style="--delay: 0.22s"
+          >
+            <p class="section-eyebrow">Service Detail</p>
+            <h2>Bespoke Wedding Planning</h2>
+
+            <p class="service-detail-text">
+              Our wedding planning service is designed to deliver a seamless and
+              luxurious experience from concept to execution. We curate every
+              detail with precision, ensuring your celebration reflects
+              elegance, personality, and timeless beauty.
+            </p>
+
+            <ul class="service-features">
+              <li>
+                <i class="fa-solid fa-check"></i
+                ><span>Full-service planning and coordination</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i
+                ><span>Custom design concepts and moodboards</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i
+                ><span>Vendor management and logistics</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i
+                ><span>On-site execution and event styling</span>
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+          </div>
+        </div>
+      </section>
+      <!-- ================= PROCESS ================= -->
+      <section class="process" id="process" data-reveal style="--delay: 0.12s">
+        <div class="container">
+          <div class="section-head" data-reveal style="--delay: 0.16s">
+            <p class="section-eyebrow">Our Process</p>
+            <h2>From Vision to Execution</h2>
+            <p>
+              A refined approach ensuring every detail is planned, designed, and
+              executed flawlessly.
+            </p>
+          </div>
+
+          <div class="process-wrapper">
+            <div class="process-line"></div>
+
+            <!-- STEP -->
+            <div class="process-step" data-reveal style="--delay: 0.2s">
+              <div class="process-icon">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+              <h3>Consultation</h3>
+              <p>
+                We understand your vision, goals, and expectations in detail.
+              </p>
+            </div>
+
+            <!-- STEP -->
+            <div class="process-step" data-reveal style="--delay: 0.26s">
+              <div class="process-icon">
+                <i class="fa-solid fa-clipboard-list"></i>
+              </div>
+              <h3>Planning</h3>
+              <p>
+                Strategic planning with curated vendors and seamless
+                coordination.
+              </p>
+            </div>
+
+            <!-- STEP -->
+            <div class="process-step" data-reveal style="--delay: 0.32s">
+              <div class="process-icon">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <h3>Design</h3>
+              <p>
+                Creative direction with moodboards, styling, and visual
+                concepts.
+              </p>
+            </div>
+
+            <!-- STEP -->
+            <div class="process-step" data-reveal style="--delay: 0.38s">
+              <div class="process-icon">
+                <i class="fa-solid fa-check-circle"></i>
+              </div>
+              <h3>Execution</h3>
+              <p>
+                Flawless delivery ensuring every moment is perfectly
+                orchestrated.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= PRICING ================= -->
+      <section
+        class="pricing-preview"
+        id="pricing"
+        data-reveal
+        style="--delay: 0.12s"
+      >
+        <div class="container">
+          <div class="section-head" data-reveal style="--delay: 0.16s">
+            <p class="section-eyebrow">Pricing</p>
+            <h2>Luxury Packages Tailored for You</h2>
+            <p>Choose a plan that aligns with your vision and experience.</p>
+          </div>
+
+          <div class="pricing-grid">
+            <!-- SIGNATURE -->
+            <div class="pricing-card" data-reveal style="--delay: 0.2s">
+              <h3>Signature</h3>
+              <div class="price">$8,500</div>
+
+              <ul class="pricing-features">
+                <li>
+                  <i class="fa-solid fa-check"></i
+                  ><span>Planning Consultation</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i><span>Design Concept</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i><span>Vendor Shortlist</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i
+                  ><span>Event Coordination</span>
+                </li>
+              </ul>
+
+              <a href="contact.html" class="btn btn-outline">Get Started</a>
+            </div>
+
+            <!-- PREMIUM -->
+            <div
+              class="pricing-card featured"
+              data-reveal
+              style="--delay: 0.26s"
+            >
+              <span class="pricing-badge">Most Popular</span>
+              <h3>Premium</h3>
+              <div class="price">$14,900</div>
+
+              <ul class="pricing-features">
+                <li>
+                  <i class="fa-solid fa-check"></i
+                  ><span>Full Planning & Design</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i
+                  ><span>Moodboard Collaboration</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i
+                  ><span>Vendor Management</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i
+                  ><span>On-site Execution</span>
+                </li>
+              </ul>
+
+              <a href="contact.html" class="btn btn-primary">Book Now</a>
+            </div>
+
+            <!-- ELITE -->
+            <div class="pricing-card" data-reveal style="--delay: 0.32s">
+              <h3>Elite</h3>
+              <div class="price">$25,000+</div>
+
+              <ul class="pricing-features">
+                <li>
+                  <i class="fa-solid fa-check"></i
+                  ><span>Custom Event Strategy</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i
+                  ><span>Luxury Styling & Production</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i
+                  ><span>VIP Guest Experience</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i
+                  ><span>Dedicated Concierge</span>
+                </li>
+              </ul>
+
+              <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= PORTFOLIO PREVIEW ================= -->
+      <section
+        class="portfolio-preview"
+        id="portfolio-preview"
+        data-reveal
+        style="--delay: 0.12s"
+      >
+        <div class="container">
+          <div class="section-head" data-reveal style="--delay: 0.16s">
+            <p class="section-eyebrow">Our Work</p>
+            <h2>Signature Experiences We’ve Crafted</h2>
+            <p>
+              Each event reflects our commitment to elegance, creativity, and
+              flawless execution.
+            </p>
+          </div>
+
+          <div class="portfolio-grid">
+            <!-- ITEM -->
+            <div class="portfolio-item" data-reveal style="--delay: 0.2s">
+              <img
+                src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Wedding</span>
+                <h3>Golden Ceremony</h3>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="portfolio-item" data-reveal style="--delay: 0.26s">
+              <img
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Corporate</span>
+                <h3>Brand Launch Gala</h3>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="portfolio-item" data-reveal style="--delay: 0.32s">
+              <img
+                src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Private</span>
+                <h3>Luxury Soiree</h3>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="portfolio-item" data-reveal style="--delay: 0.38s">
+              <img
+                src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1200&q=80"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Styling</span>
+                <h3>Floral Concept</h3>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="portfolio-item" data-reveal style="--delay: 0.44s">
+              <img
+                src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Wedding</span>
+                <h3>Garden Reception</h3>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="portfolio-item" data-reveal style="--delay: 0.5s">
+              <img
+                src="https://images.unsplash.com/photo-1523528283115-9bf9b1699245?auto=format&fit=crop&w=1200&q=80"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Private</span>
+                <h3>Modern Celebration</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= SERVICE CTA ================= -->
+      <section
+        class="cta-service"
+        id="cta-service"
+        data-reveal
+        style="--delay: 0.12s"
+      >
+        <div class="cta-service-bg"></div>
+        <div class="cta-service-overlay"></div>
+
+        <div
+          class="container cta-service-content"
+          data-reveal
+          style="--delay: 0.18s"
+        >
+          <h2>Start Your Experience with IMPERIA</h2>
+          <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-reveal style="--delay: 0.18s">
+      <div class="footer-accent" aria-hidden="true"></div>
+      <div class="footer-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand" data-reveal style="--delay: 0.22s">
+            <a
+              class="brand footer-logo"
+              href="index.html"
+              aria-label="IMPERIA Events home"
+            >
+              <span class="brand-icon"><i class="fa-solid fa-gem"></i></span>
+              <span class="brand-text">IMPERIA Events</span>
+            </a>
+            <p class="footer-tagline">
+              An ultra-luxury event atelier crafting immersive celebrations,
+              couture design, and flawless execution.
+            </p>
+            <div class="footer-contact">
+              <span
+                ><i class="fa-solid fa-location-dot"></i> Madison Avenue, New
+                York</span
+              >
+              <span
+                ><i class="fa-solid fa-envelope"></i>
+                hello@imperiaevents.com</span
+              >
+              <span><i class="fa-solid fa-phone"></i> +1 (212) 555-0198</span>
+            </div>
+            <div class="footer-social">
+              <a class="social-link" href="#" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a class="social-link" href="#" aria-label="Pinterest"
+                ><i class="fa-brands fa-pinterest-p"></i
+              ></a>
+              <a class="social-link" href="#" aria-label="Behance"
+                ><i class="fa-brands fa-behance"></i
+              ></a>
+              <a class="social-link" href="#" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col" data-reveal style="--delay: 0.26s">
+            <h3>Navigation</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col" data-reveal style="--delay: 0.3s">
+            <h3>Signature Services</h3>
+            <ul class="footer-links">
+              <li><a href="services.html">Weddings & Destination</a></li>
+              <li><a href="services.html">Corporate Galas</a></li>
+              <li><a href="services.html">Private Celebrations</a></li>
+              <li><a href="services.html">Luxury Styling</a></li>
+            </ul>
+          </div>
+          <div
+            class="footer-col footer-access"
+            data-reveal
+            style="--delay: 0.32s"
+          >
+            <h3>Access</h3>
+            <ul class="footer-links">
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="index.html">Home page-1</a></li>
+              <li><a href="homepage2.html">Home page-2</a></li>
+              <li><a href="userdashboard.html">Client Dashboard</a></li>
+              <li><a href="admindashboard.html">Admin Dashboard</a></li>
+            </ul>
+          </div>
+          <div class="footer-col" data-reveal style="--delay: 0.34s">
+            <h3>Private List</h3>
+            <p>
+              Join our curated list for seasonal launches, private showcases,
+              and editorial inspiration.
+            </p>
+            <form class="footer-form">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                aria-label="Email address"
+                required
+              />
+              <button class="btn btn-primary footer-btn" type="submit">
+                Subscribe
+              </button>
+            </form>
+            <span class="footer-note"
+              >We respect your inbox. Unsubscribe anytime.</span
+            >
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 IMPERIA Events. All rights reserved.</p>
+          <div class="footer-mini-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" type="button" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>
+

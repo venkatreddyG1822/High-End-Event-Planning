@@ -1,0 +1,514 @@
+body.rtl {
+  direction: rtl;
+}
+
+body.rtl .header-inner {
+  direction: rtl;
+}
+
+body.rtl .brand {
+  flex-direction: row-reverse;
+  gap: 8px;
+}
+
+body.rtl .nav-list {
+  flex-direction: row-reverse;
+}
+
+body.rtl .header-actions {
+  flex-direction: row-reverse;
+}
+
+body.rtl .nav-link,
+body.rtl .dropdown-link {
+  text-align: right;
+}
+
+body.rtl .dropdown {
+  left: auto;
+  right: 0;
+}
+
+body.rtl .dropdown-link:hover,
+body.rtl .dropdown-link:focus-visible {
+  transform: translateX(-2px);
+}
+
+body.rtl .hero-actions {
+  flex-direction: row-reverse;
+}
+
+body.rtl .hero-saas-grid {
+  direction: rtl;
+}
+
+body.rtl .hero-saas-content {
+  text-align: right;
+  order: 2;
+}
+
+body.rtl .hero-saas-content .hero-actions {
+  justify-content: flex-end;
+}
+
+body.rtl .hero-saas-highlights {
+  justify-content: flex-end;
+}
+
+body.rtl .hero-saas-visual {
+  order: 1;
+}
+
+body.rtl .token-1 {
+  right: auto;
+  left: 24px;
+}
+
+body.rtl .token-2 {
+  left: auto;
+  right: 24px;
+}
+
+body.rtl .token-3 {
+  right: auto;
+  left: 24px;
+}
+
+body.rtl .logo-track {
+  animation-direction: reverse;
+}
+
+body.rtl .logo-group {
+  flex-direction: row-reverse;
+}
+
+body.rtl .section-head,
+body.rtl .service-content {
+  text-align: right;
+}
+
+body.rtl .services-grid {
+  direction: rtl;
+}
+
+body.rtl .portfolio-filters {
+  flex-direction: row-reverse;
+}
+
+body.rtl .portfolio-grid {
+  direction: rtl;
+}
+
+body.rtl .portfolio-overlay {
+  text-align: right;
+}
+
+body.rtl .story-content {
+  text-align: right;
+}
+
+body.rtl .flow-item {
+  grid-template-columns: minmax(0, 1fr) 90px minmax(0, 1fr);
+}
+
+body.rtl .flow-item.is-right .flow-card {
+  grid-column: 1;
+}
+
+body.rtl .flow-item.is-right .flow-visual {
+  grid-column: 3;
+}
+
+body.rtl .flow-item .flow-card {
+  grid-column: 3;
+}
+
+body.rtl .flow-item .flow-visual {
+  grid-column: 1;
+}
+
+body.rtl .testimonial-nav.prev {
+  left: auto;
+  right: -10px;
+}
+
+body.rtl .testimonial-nav.next {
+  right: auto;
+  left: -10px;
+}
+
+body.rtl .testimonials-luxe-head,
+body.rtl .testimonial-luxe-card {
+  text-align: right;
+}
+
+body.rtl .testimonial-quote-icon {
+  right: auto;
+  left: var(--space-3);
+}
+
+body.rtl .testimonial-luxe-client {
+  flex-direction: row-reverse;
+}
+
+body.rtl .pricing-grid {
+  direction: rtl;
+}
+
+body.rtl .price-card {
+  text-align: right;
+}
+
+body.rtl .price-features li {
+  flex-direction: row-reverse;
+}
+
+body.rtl .price-badge {
+  right: auto;
+  left: var(--space-3);
+}
+
+body.rtl .footer-grid {
+  direction: rtl;
+}
+
+body.rtl .footer-contact span {
+  flex-direction: row-reverse;
+}
+
+body.rtl .footer-links a:hover,
+body.rtl .footer-links a:focus-visible {
+  transform: translateX(-2px);
+}
+
+body.rtl .footer-form {
+  flex-direction: row-reverse;
+}
+
+body.rtl .footer-form input {
+  text-align: right;
+}
+
+body.rtl .footer-bottom {
+  flex-direction: row-reverse;
+}
+
+body.rtl .footer-mini-links {
+  flex-direction: row-reverse;
+}
+
+body.rtl .dashboard-layout {
+  grid-template-columns: 1fr 280px;
+}
+
+body.rtl .dashboard-sidebar {
+  order: 2;
+}
+
+body.rtl .dashboard-main {
+  order: 1;
+}
+
+body.rtl .topbar-left {
+  flex-direction: row-reverse;
+}
+
+body.rtl .topbar-actions {
+  flex-direction: row-reverse;
+}
+
+body.rtl .sidebar-link {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+body.rtl .sidebar-link:hover,
+body.rtl .sidebar-link:focus-visible {
+  transform: translateX(-2px);
+}
+
+body.rtl .profile-menu {
+  right: auto;
+  left: 0;
+}
+
+body.rtl .timeline-row {
+  flex-direction: row-reverse;
+}
+
+body.rtl .overview-top,
+body.rtl .vendor-actions {
+  flex-direction: row-reverse;
+}
+
+body.rtl .event-card,
+body.rtl .vendor-card {
+  flex-direction: row-reverse;
+}
+
+body.rtl .mood-overlay {
+  justify-content: flex-start;
+}
+
+body.rtl .analytics-header,
+body.rtl .analytics-card-head {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+body.rtl .panel-list li {
+  flex-direction: row-reverse;
+}
+
+body.rtl .vendor-row {
+  text-align: right;
+}
+
+body.rtl .auth-card {
+  direction: rtl;
+}
+
+body.rtl .auth-brand {
+  flex-direction: row-reverse;
+}
+
+body.rtl .auth-options {
+  flex-direction: row-reverse;
+}
+
+body.rtl .auth-check {
+  flex-direction: row-reverse;
+}
+
+body.rtl .auth-divider {
+  flex-direction: row-reverse;
+}
+
+body.rtl .utility-card {
+  direction: rtl;
+}
+
+body.rtl .utility-actions,
+body.rtl .utility-links,
+body.rtl .utility-form {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 1024px) {
+  body.rtl .dashboard-sidebar {
+    left: auto;
+    right: 0;
+    transform: translateX(105%);
+  }
+
+  body.rtl.sidebar-open .dashboard-sidebar {
+    transform: translateX(0);
+  }
+}
+
+body.rtl .back-to-top {
+  right: auto;
+  left: 24px;
+}
+html[dir="rtl"] .feature-card{
+  text-align:right;
+}
+
+html[dir="rtl"] .feature-icon{
+  margin-right:0;
+}
+html[dir="rtl"] .moodboard{
+  direction:rtl;
+}
+html[dir="rtl"] .workflow-steps{
+  flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .progress-line{
+  left:auto;
+  right:0;
+}
+html[dir="rtl"] .usecase-content{
+  left:auto;
+  right:25px;
+  text-align:right;
+}
+html[dir="rtl"] .why-grid{
+  direction:rtl;
+}
+
+html[dir="rtl"] .why-card{
+  flex-direction:row-reverse;
+  text-align:right;
+}
+html[dir="rtl"] .cta-saas-content{
+  text-align:center;
+}
+html[dir="rtl"] .about-hero-content{
+  text-align:center;
+}
+html[dir="rtl"] .story-grid{
+  direction:rtl;
+}
+
+html[dir="rtl"] .story-signature{
+  padding-left:0;
+  padding-right:20px;
+}
+
+html[dir="rtl"] .story-signature::before{
+  left:auto;
+  right:0;
+}
+html[dir="rtl"] .team-content{
+  text-align:center;
+}
+html[dir="rtl"] .value-card{
+  text-align:center;
+}
+
+
+html[dir="rtl"] .timeline{
+  padding-left:0;
+  padding-right:40px;
+}
+
+html[dir="rtl"] .timeline-line{
+  left:auto;
+  right:20px;
+}
+
+html[dir="rtl"] .timeline-dot{
+  left:auto;
+  right:-2px;
+}
+
+html[dir="rtl"] .timeline-content{
+  padding-left:0;
+  padding-right:30px;
+  text-align:right;
+}
+
+body.rtl .timeline{
+  padding-left:0;
+  padding-right:40px;
+}
+
+body.rtl .timeline-line{
+  left:auto;
+  right:20px;
+}
+
+body.rtl .timeline-dot{
+  left:auto;
+  right:-2px;
+}
+
+body.rtl .timeline-content{
+  padding-left:0;
+  padding-right:30px;
+  text-align:right;
+}
+html[dir="rtl"] .stat-card{
+  text-align:center;
+}
+html[dir="rtl"] .cta-luxury-content{
+  text-align:center;
+}
+html[dir="rtl"] .services-hero-content{
+  text-align:center;
+}
+html[dir="rtl"] .service-content{
+  left:auto;
+  right:25px;
+  text-align:right;
+}
+
+html[dir="rtl"] .service-detail-grid{
+  direction:rtl;
+}
+
+html[dir="rtl"] .service-features li{
+  flex-direction:row-reverse;
+  text-align:right;
+}
+html[dir="rtl"] .process-wrapper{
+  direction:rtl;
+}
+
+html[dir="rtl"] .process-step{
+  text-align:center;
+}
+html[dir="rtl"] .pricing-features li{
+  flex-direction:row-reverse;
+}
+html[dir="rtl"] .portfolio-overlay{
+  text-align:right;
+}
+html[dir="rtl"] .cta-service-content{
+  text-align:center;
+}
+
+html[dir="rtl"] .pricing-hero-content{
+  text-align:center;
+}
+html[dir="rtl"] .pricing-features li{
+  flex-direction:row-reverse;
+}
+html[dir="rtl"] .compare-table th:first-child,
+html[dir="rtl"] .compare-table td:first-child{
+  text-align:right;
+}
+html[dir="rtl"] .value-item{
+  text-align:center;
+}
+
+html[dir="rtl"] .cta-final-content{
+  text-align:center;
+}
+html[dir="rtl"] .contact-hero-content{
+  text-align:center;
+}
+
+html[dir="rtl"] .form-group label{
+  left:auto;
+  right:12px;
+}
+
+html[dir="rtl"] .info-items div{
+  flex-direction:row-reverse;
+}
+html[dir="rtl"] .info-card{
+  text-align:center;
+}
+html[dir="rtl"] .contact-cta-content{
+  text-align:center;
+}
+
+
+@media (max-width: 1024px) {
+  body.rtl .nav-list {
+    align-items: flex-end;
+  }
+
+  body.rtl .dropdown {
+    margin-right: 0;
+  }
+
+  body.rtl .hero-saas-content {
+    text-align: center;
+    order: 1;
+  }
+
+  body.rtl .hero-saas-content .hero-actions {
+    justify-content: center;
+  }
+
+  body.rtl .hero-saas-highlights {
+    justify-content: center;
+  }
+
+  body.rtl .hero-saas-visual {
+    order: 2;
+  }
+}

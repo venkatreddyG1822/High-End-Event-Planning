@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IMPERIA Events client registration">
+  <title>IMPERIA Events | Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/darkmode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="auth-body">
+  <div class="auth-bg" aria-hidden="true"></div>
+  <div class="auth-overlay" aria-hidden="true"></div>
+
+  <main class="auth-layout">
+    <div class="auth-card">
+      <div class="auth-panel auth-intro">
+        <a class="brand auth-brand" href="index.html" aria-label="IMPERIA Events">
+          <span class="brand-icon"><i class="fa-solid fa-gem"></i></span>
+          <span class="brand-text">IMPERIA Events</span>
+        </a>
+        <span class="auth-badge">Client Registration</span>
+        <h1>Begin Your Luxury Journey</h1>
+        <p>Join our private studio to collaborate on vision boards, timelines, and curated vendor selections.</p>
+        <div class="auth-highlights">
+          <div class="auth-highlight"><i class="fa-solid fa-champagne-glasses"></i> Concierge-level planning</div>
+          <div class="auth-highlight"><i class="fa-solid fa-sparkles"></i> Tailored mood boards</div>
+          <div class="auth-highlight"><i class="fa-solid fa-star"></i> Premium vendor access</div>
+        </div>
+        <div class="auth-quote">
+          <span>“Every detail begins here.”</span>
+          <strong>IMPERIA Atelier</strong>
+        </div>
+      </div>
+
+      <div class="auth-panel auth-form-panel">
+        <h2>Create Account</h2>
+        <p class="auth-subtext">Tell us about your celebration to unlock the studio.</p>
+        <form class="auth-form">
+          <div class="auth-row">
+            <div class="auth-field">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Isabella" required>
+            </div>
+            <div class="auth-field">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Laurent" required>
+            </div>
+          </div>
+          <div class="auth-field">
+            <label for="register-email">Email Address</label>
+            <input type="email" id="register-email" name="email" placeholder="you@imperiaevents.com" required>
+          </div>
+          <div class="auth-field">
+            <label for="register-phone">Phone Number</label>
+            <input type="tel" id="register-phone" name="phone" placeholder="+1 (___) ___-____" required>
+          </div>
+          <div class="auth-row">
+            <div class="auth-field">
+              <label for="register-password">Password</label>
+              <input type="password" id="register-password" name="password" placeholder="••••••••" required>
+            </div>
+            <div class="auth-field">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" name="confirm-password" placeholder="••••••••" required>
+            </div>
+          </div>
+          <label class="auth-check">
+            <input type="checkbox" required>
+            <span>I agree to the Terms & Privacy Policy</span>
+          </label>
+          <button class="btn btn-primary auth-submit" type="submit">Create Account</button>
+        </form>
+        <p class="auth-footer">Already have an account? <a href="login.html" class="auth-link">Sign in</a></p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
