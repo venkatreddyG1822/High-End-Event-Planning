@@ -930,7 +930,7 @@ img {
   border-radius: 22px;
   overflow: hidden;
   margin-bottom: var(--space-3);
-  background: #0f1115;
+  background: #f7f4ef;
   box-shadow: 0 24px 60px rgba(12, 12, 16, 0.18);
   transform: translateY(0);
   transition: transform var(--transition), box-shadow var(--transition), opacity 0.4s ease;
@@ -949,13 +949,16 @@ img {
 .portfolio-media {
   position: relative;
   overflow: hidden;
+  background: #f7f4ef;
+  aspect-ratio: 4 / 3;
 }
 
 .portfolio-media img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  transform: scale(1.02);
+  transform: scale(1);
   transition: transform 1s ease;
 }
 
@@ -996,7 +999,7 @@ img {
 }
 
 .portfolio-card:hover .portfolio-media img {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .portfolio-card:hover .portfolio-overlay {
