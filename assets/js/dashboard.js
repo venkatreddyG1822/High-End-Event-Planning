@@ -5,6 +5,7 @@ const sidebarLinks = document.querySelectorAll(".sidebar-link");
 const sections = document.querySelectorAll(".dashboard-section");
 const profileToggle = document.getElementById("profileToggle");
 const profileDropdown = document.getElementById("profileDropdown");
+const logoutLinks = document.querySelectorAll("[data-logout]");
 const themeToggle = document.getElementById("themeToggle");
 const rtlToggle = document.getElementById("rtlToggle");
 const progressCanvas = document.getElementById("progressChart");
@@ -392,6 +393,17 @@ if (profileToggle && profileDropdown) {
     profileToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
   });
 }
+
+logoutLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const target = link.getAttribute("href") || "login.html";
+    if (profileDropdown) {
+      profileDropdown.classList.remove("open");
+    }
+    window.location.href = target;
+  });
+});
 
 document.addEventListener("click", (event) => {
   if (!profileDropdown) return;

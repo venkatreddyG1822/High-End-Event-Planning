@@ -22,7 +22,7 @@
     <div class="auth-card">
       <div class="auth-panel auth-intro">
         <a class="brand auth-brand" href="index.html" aria-label="IMPERIA Events">
-          <span class="brand-icon"><i class="fa-solid fa-gem"></i></span>
+          <span class="brand-icon"><i class="fa-solid fa-crown"></i></span>
           <span class="brand-text">IMPERIA Events</span>
         </a>
         <span class="auth-badge">Client Portal</span>
@@ -34,7 +34,7 @@
           <div class="auth-highlight"><i class="fa-solid fa-pen-nib"></i> Curated design boards</div>
         </div>
         <div class="auth-quote">
-          <span>ìA refined experience from first login to final reveal.î</span>
+          <span>‚ÄúA refined experience from first login to final reveal.‚Äù</span>
           <strong>IMPERIA Concierge</strong>
         </div>
       </div>
@@ -49,7 +49,12 @@
           </div>
           <div class="auth-field">
             <label for="login-password">Password</label>
-            <input type="password" id="login-password" name="password" placeholder="ïïïïïïïï" required>
+            <div class="auth-input">
+              <input type="password" id="login-password" name="password" placeholder="‚Ä¢‚Ä¢‚Ä¢‚Ä¢‚Ä¢‚Ä¢‚Ä¢‚Ä¢" required>
+              <button class="password-toggle" type="button" data-password-toggle="login-password" aria-label="Show password" aria-pressed="false">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
           </div>
           <div class="auth-options">
             <label class="auth-check">
@@ -58,7 +63,7 @@
             </label>
             <a href="#" class="auth-link">Forgot password?</a>
           </div>
-          <button class="btn btn-primary auth-submit" type="submit">Access Dashboard</button>
+          <button class="btn btn-primary auth-submit" type="submit">Sign In</button>
         </form>
         <div class="auth-divider"><span>or continue with</span></div>
         <div class="auth-socials">
@@ -69,7 +74,28 @@
       </div>
     </div>
   </main>
+  <script>
+    document.querySelectorAll("[data-password-toggle]").forEach((toggle) => {
+      const inputId = toggle.getAttribute("data-password-toggle");
+      const target = document.getElementById(inputId);
+      if (!target) return;
+
+      toggle.addEventListener("click", () => {
+        const isHidden = target.type === "password";
+        target.type = isHidden ? "text" : "password";
+        toggle.setAttribute("aria-pressed", isHidden ? "true" : "false");
+        toggle.setAttribute("aria-label", isHidden ? "Hide password" : "Show password");
+
+        const icon = toggle.querySelector("i");
+        if (icon) {
+          icon.classList.toggle("fa-eye", !isHidden);
+          icon.classList.toggle("fa-eye-slash", isHidden);
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
 
 

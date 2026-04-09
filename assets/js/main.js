@@ -384,14 +384,31 @@ const runCounter = () => {
     const target = +counter.getAttribute("data-target");
     let count = 0;
     const increment = target / 100;
+    const suffix = counter.querySelector(".stat-plus");
+
+    const setValue = (value) => {
+      const textValue = Math.ceil(value).toString();
+      if (suffix) {
+        const textNode = Array.from(counter.childNodes).find(
+          (node) => node.nodeType === Node.TEXT_NODE
+        );
+        if (textNode) {
+          textNode.nodeValue = textValue;
+        } else {
+          counter.insertBefore(document.createTextNode(textValue), counter.firstChild);
+        }
+      } else {
+        counter.textContent = textValue;
+      }
+    };
 
     const update = () => {
       count += increment;
       if(count < target){
-        counter.innerText = Math.ceil(count);
+        setValue(count);
         requestAnimationFrame(update);
       } else {
-        counter.innerText = target;
+        setValue(target);
       }
     };
 
